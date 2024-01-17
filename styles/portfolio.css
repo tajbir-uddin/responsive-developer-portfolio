@@ -243,14 +243,26 @@ footer .section-title,
     .header{
         background-image: none;
     }
+    .banner .profile-pic{
+        width: 100%;
+    }
     .about{
         padding: 10px;
     }
-    .banner, .about-info-container, .skills-container,
+    nav, nav > ul, .banner, .about-info-container, .skills-container,
     .resume-container {
         flex-direction: column;
     }
+    nav > ul{
+        gap: 10px;
+    }
+    .banner{
+        padding: 20px;
+    }
 
+    .btn-primary{
+        margin-bottom: 15px;
+    }
     #what-i-do-description {
         padding: 20px;
     }

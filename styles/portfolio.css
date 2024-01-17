@@ -211,13 +211,16 @@ footer {
 
 .footer-column {
     width: 50%;
-    
+
 }
-.social-links a{
+
+.social-links a {
     margin-right: 25px;
 }
 
-.contact input[type="text"], .contact input[type="email"], textarea {
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
     display: block;
     margin-bottom: 25px;
     padding: 18px 35px;
@@ -228,6 +231,59 @@ footer {
     width: 100%;
 }
 
-footer .section-title, .section-description{
+footer .section-title,
+.section-description {
     text-align: left;
+}
+
+/* responsive devices */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    .header{
+        background-image: none;
+    }
+    .about{
+        padding: 10px;
+    }
+    .banner, .about-info-container, .skills-container,
+    .resume-container {
+        flex-direction: column;
+    }
+
+    #what-i-do-description {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
 }
